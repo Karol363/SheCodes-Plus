@@ -50,7 +50,7 @@ button {
   color: #3f8aa7;
   background: white;
 }
-.source {
+small {
   margin-top: 10px;
   font-family: monospace;
   font-size: 12px;
