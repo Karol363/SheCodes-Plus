@@ -9,7 +9,7 @@
 form {
   text-align: left;
 }
-.conditions,
+.wind,
 .minmax {
   color: white;
   display: table;
@@ -52,4 +52,9 @@ small {
   font-family: monospace;
   font-size: 12px;
   color: black;
+}
+.temperature-measurements .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
 }
