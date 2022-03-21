@@ -21,65 +21,72 @@
   </head>
   <body>
     <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <form id="search-form">
-            <input
-              type="text"
-              placeholder="Search city..."
-              autocomplete="off"
-              id="search-city-input"
-            />
-            <input type="submit" />
-          </form>
-          <button>My GPS location</button>
-          <h1></h1>
-          <div class="currentDate" id="current-time">
-            Saturday 29th January, 16h50
-          </div>
-          <i class="fas fa-sun sun-icon"></i>
-
-          <span class="temperature-measurements">
-            <a href="#" id="celsius-link">°C</a>
-            |
-            <a href="#" id="fahrenheit-link">°F </a>
-          </span>
-          <div class="temperature" id="temperature"></div>
-          <span class="minmax"> Max. 11° | Min. 7° </span>
-          <div class="currentCondition" id="current-condition"></div>
-          <span class="conditions"> Humidity 69% | Wind 8km/h </span>
-          <hr />
-          <div class="container">
-            <div class="row row-cols-5">
-              <div class="col">Sun</div>
-              <div class="col">Mon</div>
-              <div class="col">Tue</div>
-              <div class="col">Wed</div>
-              <div class="col">Thu</div>
-              <div class="col">
-                <i class="fas fa-cloud-sun"></i>
+      <div class="weather-app-wrapper">
+        <div class="card">
+          <div class="card-body">
+            <form id="search-form">
+              <input
+                type="text"
+                placeholder="Search city..."
+                autocomplete="off"
+                id="search-city-input"
+              />
+              <input type="submit" />
+            </form>
+            <button>My GPS location</button>
+            <h1></h1>
+            <div class="currentDate" id="current-time">
+              Saturday 29th January, 16h50
+            </div>
+            <div clas="clearfix weather-temperature">
+              <img
+                src="http://openweathermap.org/img/wn/04d@2x.png"
+                alt="clear sky"
+                id="icon"
+              />
+            </div>
+            <span class="temperature-measurements">
+              <a href="#" id="celsius-link">°C</a>
+              |
+              <a href="#" id="fahrenheit-link">°F </a>
+            </span>
+            <div class="temperature" id="temperature"></div>
+            <span class="minmax"> Max. 11° | Min. 7° </span>
+            <div class="currentCondition" id="current-condition"></div>
+            <span class="conditions"> Humidity 69% | Wind 8km/h </span>
+            <hr />
+            <div class="container">
+              <div class="row row-cols-5">
+                <div class="col">Sun</div>
+                <div class="col">Mon</div>
+                <div class="col">Tue</div>
+                <div class="col">Wed</div>
+                <div class="col">Thu</div>
+                <div class="col">
+                  <i class="fas fa-cloud-sun"></i>
+                </div>
+                <div class="col">
+                  <i class="fas fa-cloud-showers-heavy"></i>
+                </div>
+                <div class="col"><i class="fas fa-bolt"></i></div>
+                <div class="col"><i class="fas fa-sun"></i></div>
+                <div class="col"><i class="fas fa-sun"></i></div>
+                <div class="col">11°/6°</div>
+                <div class="col">8°/3°</div>
+                <div class="col">11°/9°</div>
+                <div class="col">12°/7°</div>
+                <div class="col">9°/7°</div>
               </div>
-              <div class="col">
-                <i class="fas fa-cloud-showers-heavy"></i>
-              </div>
-              <div class="col"><i class="fas fa-bolt"></i></div>
-              <div class="col"><i class="fas fa-sun"></i></div>
-              <div class="col"><i class="fas fa-sun"></i></div>
-              <div class="col">11°/6°</div>
-              <div class="col">8°/3°</div>
-              <div class="col">11°/9°</div>
-              <div class="col">12°/7°</div>
-              <div class="col">9°/7°</div>
             </div>
           </div>
         </div>
       </div>
+      <small>
+        <a href="https://github.com/Karol363/SheCodes-Plus" target="_blank"
+          >Open-source code</a
+        >, by KSERY
+      </small>
     </div>
-    <small>
-      <a href="https://github.com/Karol363/SheCodes-Plus" target="_blank"
-        >Open-source code</a
-      >, by KSERY
-    </small>
   </body>
   <script src="src/javascript.js"></script>
 </html>

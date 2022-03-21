@@ -16,8 +16,13 @@ function showTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let condition = response.data.weather[0].description;
   let conditionElement = document.querySelector("#current-condition");
+  let iconElement = document.querySelector("#icon");
   temperatureElement.innerHTML = `${temperature}°`;
   conditionElement.innerHTML = `${condition}`;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 function sharePosition(_response) {
   console.log(_response);

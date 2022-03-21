@@ -1,16 +1,13 @@
-.card-body {
+.card {
+  border: 1px solid #dadde1;
+  margin: 30px auto;
+  padding: 15px0px;
+  border-radius: 5px;
+  text-align: center;
   background: linear-gradient(#f7ce7a, #866fbf, #58a2b1, #3f8aa7);
 }
 form {
   text-align: left;
-}
-.sun-icon {
-  color: white;
-  display: table;
-  margin: auto;
-  font-size: 150px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 .conditions,
 .minmax {
@@ -51,7 +48,7 @@ button {
   background: white;
 }
 small {
-  margin-top: 10px;
+  margin-top: 0 auto;
   font-family: monospace;
   font-size: 12px;
   color: black;
